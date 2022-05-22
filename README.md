@@ -6,6 +6,8 @@ Apache
 
 ## Dev Logs
 
+### Wordpress setup
+
 - `wget https://wordpress.org/latest.tar.gz` to initialize Wordpress in the repository
 
 - `tar xvzf latest.tar.gz` to extract compressed Wordpress contents
@@ -26,7 +28,7 @@ Apache
 
 - Installed `MariaDB` and `phpmyadmin`.
 
- To install mariaDB 
+ To install mariaDB
 
 ```
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
@@ -101,8 +103,7 @@ Alias /phpmyadmin "/usr/share/webapps/phpMyAdmin"
 Include conf/extra/phpmyadmin.conf
 ```
 
-# phpMyAdmin configuration
-
+#### phpMyAdmin configuration
 
 - After making changes to the Apache configuration file, [restart](https://wiki.archlinux.org/title/Restart "Restart") `httpd.service`.
 
@@ -165,10 +166,66 @@ sudo systemctl restart httpd.service
 
 - went to `http://joey/wordpress` where it redirected me to `http://joey/wordpress/wp-admin/setup-config.php` to setup Wordpress.
 
-- `sudo nano /usr/share/webapps/wordpress/wp-config.php` to paste the code from the wordpress setup guide
-
-- change permissions of the /usr/share/webapps/wordpress/ and all the files inside it to user http and group http by using chown so that the webserver can access it:
+- `sudo nano /<https://github.com/wilsmex/blog-site-template.gitaccess> it:
 
 ```
 chown http:http -R /usr/share/webapps/wordpress/
 ```
+
+### Theming Setup
+
+Cloned theme-template from `https://github.com/wilsmex/blog-site-template.git`
+
+Added template files to new theme folder called `base-website`
+
+- Add subfolders to the `newthemehere` folder
+  - assets
+    - css
+    - fonts
+    - images
+    - javascript
+  - classes (For PHP classes)
+  - inc (Includes - misc files)
+  - template-parts (for splitting up parts of template)
+  - templates
+
+- Setup files required for wordpress themes
+  - style.css (Master style sheet for website)
+  - index.php (serves as the fallback if no specified template file in the file hierarchy is found by wordpress)
+
+- Add file for serving a Server error page
+  - 404.php
+
+- Add file responsible for deliverring an archive (Like list of blogs)
+  - archive.php
+
+- For displaying and serving up comments in theming
+  - comments.php
+
+- Bottom section file
+  - footer.php
+
+- Top secftion file
+  - header.php
+
+- file for overide and initiate different features of your theme
+  - functions.php
+
+- File for displaying static pages
+  - page.php
+
+- File to display search results
+  - search.php
+
+- File for displaying single blog posts
+  - single.php
+
+- For basic legal and reminders (and dev logs)
+  - read.md
+
+- Image for what that theme lookslike
+  - screenshot.png
+
+### Template Building
+
+- ipsum
