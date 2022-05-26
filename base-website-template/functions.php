@@ -1,0 +1,1 @@
+<!-- Where you can override and initiate differennt features of your theme inside Wordpress.-->

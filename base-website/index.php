@@ -1,0 +1,1 @@
+<!-- One of the required files for Wordpress, fallback page when Wordpress doesn't load the template. -->
