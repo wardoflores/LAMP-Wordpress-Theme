@@ -226,6 +226,13 @@ Added template files to new theme folder called `base-website`
 - Image for what that theme lookslike
   - screenshot.png
 
+- File for front-page of the Template
+  - front-page.php
+
 ### Template Building
 
-- ipsum
+- Copied `index.html` @ `blog-site-theme-template` to `front-page.php`
+
+- Enqueued stylesheets in `functions.php`
+
+- lorem
