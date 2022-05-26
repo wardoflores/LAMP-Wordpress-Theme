@@ -1,1 +1,0 @@
-<!-- Responsible for displaying static pages. -->

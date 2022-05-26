@@ -1,1 +1,0 @@
-<!-- Footer of the website -->

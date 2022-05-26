@@ -1,1 +1,0 @@
-<!-- Responsible for delivering an archive i.e. Blog archive -->

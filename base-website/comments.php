@@ -1,1 +1,0 @@
-<!-- Responsible for serving comments section -->
