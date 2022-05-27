@@ -235,4 +235,17 @@ Added template files to new theme folder called `base-website`
 
 - Enqueued stylesheets in `functions.php`
 
+- Replaced hardcoded stylesheets in `front-page.php` into 
+
+```
+<?php
+
+	// wordpress injects all of the stylesheets by itself
+	wp_head();
+
+?>
+```
+
+- Added dynamic version variable in `functions.php`
+
 - lorem
