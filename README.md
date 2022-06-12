@@ -248,4 +248,44 @@ Added template files to new theme folder called `base-website`
 
 - Added dynamic version variable in `functions.php`
 
-- lorem
+- Moved footer and header to `header.php` and `footer.php` respectively.
+
+- Added dynamic title tag and edited title and tagline at `Wordpress_Dashboard>General_Settings`
+
+- Media added at the `Wordpress_Dashboard > Media > New` are resized automatically by Wordpress
+  - You could set sizes of the small, medium, large media at `Media > Settings`
+
+- Set dynamic Content Management System
+
+- `Wordpress_Dashboard > Pages > Add New`
+  - Added `Home Sweet Home` page with basic title and a word as content for now.
+
+- `Wordpress_Dashboard > Settings > Reading`
+  - Set to display a Static page and set home page to the `Home Sweet Home` page.
+
+- Removed all hard coded content at the `front-page.php` file and left the article part.
+  - Added Wordpress Loop inside the Article tag.
+    - this displays the contents of the static page `Home Sweet Home`.
+
+- Made the heading at `header.php` dynamic.
+
+- modified code of Sidebar Menu from hard coded to dynamic.
+  - Added a function to `functions.php`.
+
+- `Wordpress_Dashboard > Appearance` has menu option now.
+  - Go to `Menus` and create a new Menu `main-Menu`
+
+- Add new Pages
+  - `About Page`
+  - `Contact Us`
+
+- Go to `Wordpress_Dashboard > Appearance > Menus` and add these pages to Menu:
+  - `Contact Us`
+  - `About Us`
+  - `Sample Page`
+  - Toggle the Desktop Primary Sidebar Location and click Save menu.
+
+- Add primary menu code at `header.php` to make the code dynamic.
+  - At `Wordpress_Dashboard > Appearance > Menus` there is the Screen Options, 
+    - toggle the Link Targets, and CSS Classes boxes.
+    - Then add CSS Classes to the Menu Pages
