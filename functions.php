@@ -1,5 +1,3 @@
-<!-- Where you can override and initiate different features of your theme inside Wordpress.-->
-
 <?php
 
 function basewebsite_theme_support(){
