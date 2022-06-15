@@ -6,6 +6,7 @@ function basewebsite_theme_support(){
 
     // Adds dunamic title tag support
     add_theme_support('title-tag');
+    add_theme_support('custom-logo');
 
 }
 
@@ -22,7 +23,6 @@ function basewebsite_menus() {
 }
 
 add_action('init', 'basewebsite_menus');
-
 
 function basewebsite_register_styles() {
 

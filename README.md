@@ -288,4 +288,20 @@ Added template files to new theme folder called `base-website`
 - Add primary menu code at `header.php` to make the code dynamic.
   - At `Wordpress_Dashboard > Appearance > Menus` there is the Screen Options, 
     - toggle the Link Targets, and CSS Classes boxes.
-    - Then add CSS Classes to the Menu Pages
+    - Then add CSS Classes to the Menu Pages.
+
+- Edit `style.css`
+  - element `.blog-nav .nav-link` to `.blog-nav .nav-link`
+  - element `.header nav-item nav-link` to `.header nav-item a`
+  - element `.header nav-item nav-link:hover` to `.header nav-item a:hover`
+  - element `.header .nav-item.active .nav-link` to `.header .nav-item.active a`
+  - element `.header .nav-item.active .nav-link:hover` to `.header .nav-item.active a:hover`
+  - element `.blog-nav .nav-link` to `.blog-nav a`
+  - element `.blog-nav .nav-link:hover` to `.blog-nav a:hover`
+
+- Edit shortcut icon href to `"/wp-content/themes/basewebsite/assets/images/logo.png"`
+  - Paste icon from Blog-Site-Template to the above link.
+
+- Add custom logo function at `functions.php`
+
+- Go to `Wordpress_Dashboard > Themes`  go to your theme, click customize, go to Site Identity, click select logo and select file.
