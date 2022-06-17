@@ -329,7 +329,7 @@ Added template files to new theme folder called `base-website`
 
 - get elements from `post.html` and paste into `comments.php`.
 
-- lorem
+- Make Comment body dynamic ( CUSTOMIZE IT YOURSELF BY ADDING FLAGS )
 
 - lorem
 
