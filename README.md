@@ -305,3 +305,8 @@ Added template files to new theme folder called `base-website`
 - Add custom logo function at `functions.php`
 
 - Go to `Wordpress_Dashboard > Themes`  go to your theme, click customize, go to Site Identity, click select logo and select file.
+  - Also apply as the icon too.
+
+- Added logo css to menu.
+
+- 
