@@ -307,6 +307,46 @@ Added template files to new theme folder called `base-website`
 - Go to `Wordpress_Dashboard > Themes`  go to your theme, click customize, go to Site Identity, click select logo and select file.
   - Also apply as the icon too.
 
-- Added logo css to menu.
+- Add logo css to menu.
 
-- 
+- Add dynamic code for Site title in the menu.
+
+- Add new posts for blog.
+
+- Add thumbnail theme support at `functions.php`.
+
+- Add thumbnails in Media library.
+
+- Add all of `front-page.php` to `single.php`.
+
+- In `single.php` replace `the_content()` into a `get_template_part()` function.
+
+- add `template-parts/content-article.php`.
+
+- get elements from `post.html` and paste into `content-article.php`.
+
+- Make date, tags, and comments dynamic in `single.php`.
+
+- get elements from `post.html` and paste into `comments.php`.
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
+
+- lorem
