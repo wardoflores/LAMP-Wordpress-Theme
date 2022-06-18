@@ -355,12 +355,12 @@ Added template files to new theme folder called `base-website`
 
 - Copy `single.php` to `page.php`.
 
-- lorem
+- Add widgets by adding function to `functions.php`
 
-- lorem
+- Add new `shortcode` widget to sidebar 1.
+  - Add `dynamic_sidebar();` to `header.php`.
+  - Cut out hard coded social icons from `header.php` to the `shortcode` widget
 
-- lorem
-
-- lorem
-
-- lorem
+- Add new `shortcode` widget to footer 1.
+  - Add `dynamic_sidebar();` to `footer.php`.
+  - Cut out hard coded social icons from `footer.php` to the `shortcode` widget

@@ -58,16 +58,17 @@
                 ?>
 
 				<hr>
-				<ul class="social-list list-inline py-3 mx-auto">
-					<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
-				</ul>
+				
+				<?php
+
+					dynamic_sidebar('sidebar-1');
+
+				?>
 
 			</div>
+			
 		</nav>
+
     </header>
     <div class="main-wrapper">
 	    <header class="page-title theme-bg-light text-center gradient py-5">

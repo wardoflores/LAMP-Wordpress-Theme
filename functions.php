@@ -53,4 +53,38 @@ function basewebsite_register_scripts() {
 // execute 2nd parameter which is the above function.
 add_action( 'wp_enqueue_scripts', 'basewebsite_register_scripts' );
 
+function basewebsite_widget_areas(){
+
+    register_sidebar(
+        
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+            'after_widget' => '</ul>',
+            'name' => 'Sidebar Area',
+            'id' => 'sidebar-1',
+            'description' => 'Sidebar Widget Area'
+        )
+        
+    );
+
+    register_sidebar(
+        
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '</ul>',
+            'name' => 'Footer Area',
+            'id' => 'footer-1',
+            'description' => 'Footer Widget Area'
+        )
+        
+    );
+
+}
+
+add_action( 'widgets_init', 'basewebsite_widget_areas' )
+
 ?>
