@@ -364,3 +364,8 @@ Added template files to new theme folder called `base-website`
 - Add new `shortcode` widget to footer 1.
   - Add `dynamic_sidebar();` to `footer.php`.
   - Cut out hard coded social icons from `footer.php` to the `shortcode` widget
+
+- Add `404.php` template by copying `index.php`
+  - delete php tags and fill in with H1 of Page not Found. And search php tag.
+
+- Copy `archive.php` to `search.php`
