@@ -331,15 +331,29 @@ Added template files to new theme folder called `base-website`
 
 - Make Comment body dynamic ( CUSTOMIZE IT YOURSELF BY ADDING FLAGS )
 
-- lorem
+- Copy `single.php` into `archive.php`
 
-- lorem
+- Duplicate `template-parts/content-article.php` into `template-parts/content-archive.php` and reduce into `the_excerpt();` only.
 
-- lorem
+- Make a `Blog` page.
 
-- lorem
+- Set `Blog` page into Post Page in `Reading_Settings > Your Homepage displays`
 
-- lorem
+- Add `Blog` page to Menu and apply same classes as before
+
+- Copy `archive.php` to `index.html` page
+
+- Create more than 10 posts to have a new page (since 10 pages are default cap for each archive page.)
+
+- Edit `content-archive.php` refering the `archive.html` to display more than the excerpt.
+  - Add dynamic title, date, comment number, thumbnail, and permalink.
+  - Dynamic reading time is TODO separate from tutorial.
+  - Set blog post limit in `Settings > Reading` from default 10 to 4 to see pagination links.
+  - Add pagination function at `index.php`
+
+- Make a new file `template-parts/content-page.php` where it only shows `the_content();`
+
+- Copy `single.php` to `page.php`.
 
 - lorem
 
