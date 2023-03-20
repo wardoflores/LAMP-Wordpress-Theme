@@ -2,8 +2,21 @@
 
 ## Setup
 
-TODO
+- Enable MySQL
+- service: MariaDB
 
-## Server
+```
+sudo systemctl enable --now mariadb.service
+```
 
-Apache
+- Enable Web Server
+- service: Apache
+
+```
+sudo systemctl enable --now httpd.service 
+```
+
+- login to phpmyadmin dashboard in browser: http://127.0.0.1/phpmyadmin/
+	- USER: <set_username>
+
+- Go to http://<set_username>/wordpress
